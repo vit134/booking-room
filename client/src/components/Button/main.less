@@ -1,0 +1,52 @@
+.button {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 4px;
+    text-align: center;
+    padding: 12px 24px;
+    font-size: 13px;
+    letter-spacing: 0;
+    font-weight: 600;
+    cursor: pointer;
+
+    &_blue {
+        color: #ffffff;
+        background: @blueColor;
+
+        &:active {
+            background: @blueColorPressed;
+        }
+
+        &:hover {
+            background: @blueColorHover;
+        }
+    }
+
+    &_grey {
+        background: @greyColor;
+
+        &:active {
+            background:  #C7CDD3;
+        }
+
+        &:hover {
+            background: @greyColorHover;
+        }
+    }
+
+    &_add-event {
+        width: 140px;
+        height: 36px;
+    }
+
+    &_cansel {
+        &.disabled {
+            opacity: 0.4;
+        }
+    }
+
+    &.disabled {
+        background: #E5E5E5;
+        color: #8B8E92;
+    }
+}
